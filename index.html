@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 border">
+    <header class="header">
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
@@ -22,7 +22,7 @@
               <span class="hamburger hamburger-transition"></span>
               <span class="hamburger origin-top-left hamburger-transition"></span>
             </button>
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <nav id="nav-menu" class="navbar lg:block">
               <ul class="block lg:flex">
                 <li class="group">
                   <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Home</a>
@@ -44,15 +44,15 @@
     </header>
     <!-- Navbar end -->
     <!-- Main -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 bg-slate-100 lg:h-screen">
       <div class="container">
-        <div class="flex flex-wrap">
+        <div class="cover">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">Hello guys, my name<span class="text-5xl font-bold block text-ternary mt-2 md:text-6xl lg:text-6xl">FIKRI GOZALI</span></h1>
-            <h2 class="font-medium text-secondary mb-3 md:text-xl">Web & Software Development</h2>
-            <p class="text-base font-medium text-quaternary mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat magnam dignissimos.</p>
+            <h2 class="font-medium text-secondary mb-3 md:text-xl">Website Development</h2>
+            <p class="txt-b mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat magnam dignissimos.</p>
 
-            <div class="flex xs:justify-center mb-5">
+            <div class="flex mlg:justify-center mb-5">
               <a href="./src/page/contact.html" class="mt-5 text-base font-semibold text-white bg-primary py-2 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-out">Contact me</a>
             </div>
           </div>
@@ -65,20 +65,20 @@
       </div>
     </section>
 
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 lg:h-screen">
       <div class="container">
-        <div class="flex flex-wrap">
+        <div class="cover">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <a href="src/page/about.html" class="font-bold text-primary text-lg hover:opacity-80">About me</a>
             <h2 class="font-bold text-black text-3xl mt-2 mb-5 max-w-md lg:text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-            <p class="font-medium text-base text-quaternary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quaerat pariatur tempore ab quisquam, repudiandae quos?</p>
+            <p class="txt-b max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quaerat pariatur tempore ab quisquam, repudiandae quos?</p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3 class="font-semibold text-2xl text-black mb-6 lg:text-3xl lg:pt-10">Lorem, ipsum.</h3>
-            <p class="font-medium text-base text-quaternary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, tempore ex cumque veritatis exercitationem rem ullam necessitatibus?</p>
+            <p class="txt-b mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, tempore ex cumque veritatis exercitationem rem ullam necessitatibus?</p>
 
-            <div class="flex items-center xs:justify-center">
-              <a href="https://www.facebook.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <div class="flex items-center mb-5 xs:justify-center">
+              <a href="https://www.facebook.com" target="_blank" class="icn">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
                   <path
@@ -86,7 +86,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://www.twitter.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.twitter.com" target="_blank" class="icn">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Twitter</title>
                   <path
@@ -94,7 +94,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://www.discord.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.discord.com" target="_blank" class="icn">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Discord</title>
                   <path
@@ -102,7 +102,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://www.github.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.github.com" target="_blank" class="icn">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -110,7 +110,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://www.linkedin.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.linkedin.com" target="_blank" class="icn">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
@@ -118,6 +118,65 @@
                   />
                 </svg>
               </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 my-5">
+          <h3 class="font-semibold text-2xl mb-5">My Skill</h3>
+          <div class="cover">
+            <div class="w-full pr-4 lg:w-1/2 mlg:pr-0">
+              <div class="mb-2">
+                <h1>HTML</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white html">95%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <h1>CSS</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white css">90%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <h1>Javascript</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white js">70%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <h1>PHP</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white php">20%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full pl-4 lg:w-1/2 mlg:pl-0">
+              <div class="mb-2">
+                <h1>Tailwind CSS</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white tw">70%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <h1>Bootstrap</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white bt">80%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <h1>NodeJS</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white njs">50%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <h1>MongoDB</h1>
+                <div class="w-full bg-quaternary">
+                  <div class="text-right py-1 pr-2 text-white mdb">15%</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -130,37 +189,37 @@
           <div class="max-w-xl mx-auto text-center mb-16">
             <a href="src/page/portfolio.html" class="font-semibold text-lg text-primary hover:opacity-80">Portfolio</a>
             <h2 class="font-bold text-black text-3xl mt-2 mb-4">My Project</h2>
-            <p class="font-medium text-md text-quaternary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam itaque labore delectus tempore vel exercitationem dicta voluptate omnis commodi ut.</p>
+            <p class="txt-b">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam itaque labore delectus tempore vel exercitationem dicta voluptate omnis commodi ut.</p>
           </div>
         </div>
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <a href="#" class="block mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+          <a href="#" class="prt">
+            <div class="prtimg">
               <img src="src/img/portfolio/1.jpg" alt="test img" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-black mt-5 mb-3">Test Landing Page</h3>
-            <p class="font-medium text-base text-quaternary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
+            <h3 class="prth3">Test Landing Page</h3>
+            <p class="txt-b">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
           </a>
-          <a href="#" class="block mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+          <a href="#" class="prt">
+            <div class="prtimg">
               <img src="src/img/portfolio/2.jpg" alt="test img" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-black mt-5 mb-3">Test Landing Page</h3>
-            <p class="font-medium text-base text-quaternary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
+            <h3 class="prth3">Test Landing Page</h3>
+            <p class="txt-b">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
           </a>
-          <a href="#" class="block mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+          <a href="#" class="prt">
+            <div class="prtimg">
               <img src="src/img/portfolio/3.jpg" alt="test img" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-black mt-5 mb-3">Test Landing Page</h3>
-            <p class="font-medium text-base text-quaternary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
+            <h3 class="prth3">Test Landing Page</h3>
+            <p class="txt-b">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
           </a>
-          <a href="#" class="block mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+          <a href="#" class="prt">
+            <div class="prtimg">
               <img src="src/img/portfolio/4.jpg" alt="test img" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-black mt-5 mb-3">Test Landing Page</h3>
-            <p class="font-medium text-base text-quaternary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
+            <h3 class="prth3">Test Landing Page</h3>
+            <p class="txt-b">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis harum non quod.</p>
           </a>
         </div>
       </div>
@@ -170,7 +229,7 @@
     <!-- Footer -->
     <footer class="bg-secondary pt-24 pb-12">
       <div class="container">
-        <div class="flex flex-wrap">
+        <div class="cover">
           <div class="w-full px-4 mb-12 text-quaternary font-medium md:w-1/3">
             <h2 class="font-bold text-4xl text-white mb-5">Gozali.id</h2>
             <h3 class="font-bold text-2xl mb-2">Contact me</h3>
@@ -212,7 +271,7 @@
         </div>
         <div class="w-full pt-10 border-slate-700">
           <div class="flex items-center justify-center mb-5">
-            <a href="https://www.facebook.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.facebook.com" target="_blank" class="icn">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Facebook</title>
                 <path
@@ -220,7 +279,7 @@
                 />
               </svg>
             </a>
-            <a href="https://www.twitter.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.twitter.com" target="_blank" class="icn">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Twitter</title>
                 <path
@@ -228,7 +287,7 @@
                 />
               </svg>
             </a>
-            <a href="https://www.discord.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.discord.com" target="_blank" class="icn">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Discord</title>
                 <path
@@ -236,7 +295,7 @@
                 />
               </svg>
             </a>
-            <a href="https://www.github.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.github.com" target="_blank" class="icn">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path
@@ -244,7 +303,7 @@
                 />
               </svg>
             </a>
-            <a href="https://www.linkedin.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a href="https://www.linkedin.com" target="_blank" class="icn">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>LinkedIn</title>
                 <path
@@ -253,7 +312,7 @@
               </svg>
             </a>
           </div>
-          <p class="font-medium text-sm text-slate-500 text-center">© 2023 Created by Fikri Gozali with <a href="https://www.tailwindcss.com" class="hover:text-primary">Tailwind CSS</a></p>
+          <p class="font-medium text-sm text-slate-500 text-center">© 2022 Fikri Gozali using <a href="https://www.tailwindcss.com" class="hover:text-primary">Tailwind CSS</a></p>
         </div>
       </div>
     </footer>

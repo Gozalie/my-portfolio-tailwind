@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
   font-family: "Poppins", sans-serif;
@@ -9,6 +7,82 @@ body {
 .font-pops-si {
   font-family: "Poppins semibold italic", sans-serif;
 }
+
+.header {
+  @apply bg-transparent absolute top-0 left-0 w-full flex items-center z-10 border;
+}
+
+.navbar {
+  @apply absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none hidden;
+}
+
+@tailwind components;
+
+.txt-b {
+  @apply text-base font-medium text-quaternary;
+}
+
+.cover {
+  @apply flex flex-wrap;
+}
+
+.prt {
+  @apply block mb-12 p-4 md:w-1/2;
+}
+
+.prtimg {
+  @apply rounded-md shadow-md overflow-hidden;
+}
+
+.prth3 {
+  @apply font-semibold text-xl text-black mt-5 mb-3;
+}
+
+.icn {
+  @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white;
+}
+
+.html {
+  width: 95%;
+  background-color: #e44f26;
+}
+
+.css {
+  width: 90%;
+  background-color: #1572b6;
+}
+
+.js {
+  width: 70%;
+  background-color: #f0db4f;
+}
+
+.php {
+  width: 20%;
+  background-color: #4f5b93;
+}
+
+.tw {
+  width: 70%;
+  background-color: #0ea5e9;
+}
+
+.bt {
+  width: 80%;
+  background-color: #6e2cf4;
+}
+
+.njs {
+  width: 50%;
+  background-color: #026e00;
+}
+
+.mdb {
+  width: 15%;
+  background-color: #00ed64;
+}
+
+@tailwind utilities;
 
 .nav-fixed {
   @apply fixed z-[9999] bg-white bg-opacity-80;
